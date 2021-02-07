@@ -1,0 +1,25 @@
+Running peer simulation with:
+ - number_of_peers: 10
+ - max_peer_pool_size: 2
+Backend processing time: 0:00:00.000097
+
+Running peer simulation with:
+ - number_of_peers: 1000
+ - max_peer_pool_size: 10
+Backend processing time: 0:00:00.024230
+
+Running peer simulation with:
+ - number_of_peers: 1000
+ - max_peer_pool_size: 100
+Backend processing time: 0:00:00.212251
+
+Running peer simulation with:
+ - number_of_peers: 1000
+ - max_peer_pool_size: 1000
+Backend processing time: 0:00:01.052065
+
+Running peer simulation with:
+ - number_of_peers: 10000
+ - max_peer_pool_size: 10
+Backend processing time: 0:00:00.329390
+
