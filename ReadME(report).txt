@@ -1,6 +1,6 @@
 Technical Test - Python - 6/2/2021 - Prannoy Noel BHUMANA
 
-Question - 1: Connections:
+Problem - 1: Connections:
 
 This question deals with peers and their connection durations. The files used to solve it and their description are below:
 
@@ -24,4 +24,9 @@ This question deals with peers and their connection durations. The files used to
 Since there are millions of peers, I decided to sample the data randomly. I'll select the data of half of the peers, this doesn't change the distribution of data hugely. But we can analyse it in a lesser time. When the distributions are plotted, we can see they didn't change much from the previous question. However, the processing time didn't go down, but it almost remained the same. 
 
 
+Problem - 2: Data Mining
 
+All the explanations and comments are given in Jupyter notebook. Please refer to it.
+
+
+------------------------------------------ THANK YOU ------------------------------------------------
