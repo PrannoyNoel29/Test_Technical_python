@@ -38,8 +38,9 @@ class SimulationQ2(Simulation):
         # contains list of lists of all connection durations for each peer in the network
         durations_ = [i for j in self.backend_database for i in j]          # Self.backend_database is a list of lists. Taking all these values and placing them into a list
         data, bins, counts = compute_histogram_bins(durations_, BINS)       # Computing histogram bins using histogram.py by the duration data produced
-        # sns.distplot(data, hist=False)                                    # Plotting the distribution of data
-        # plt.show()
+        sns.distplot(data, hist=False)                                      # Plotting the distribution of data
+        plt.title('Peers:{} - Pool Size:{}'.format(self.number_of_peers, self.max_peer_pool_size))          # Setting a Title for the plot based on inputs
+        plt.show()
         return (data, bins, counts)                                         # Returns a histogram_bin_counts tuple which can be used in plot_histogram function
 
 

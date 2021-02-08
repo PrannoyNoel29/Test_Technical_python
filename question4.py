@@ -39,8 +39,9 @@ class SimulationQ4(Simulation):
         durations_ = random.sample(self.backend_database, int(self.number_of_peers/2))      # Sampling half of the data. When there is a millions of peers we can sample it and still gives a good distribution of the data
         k = [i for j in durations_ for i in (json.loads(j).values())]
         data, bins, counts = compute_histogram_bins(k, BINS)
-        # sns.distplot(data, hist=False)
-        # plt.show()
+        sns.distplot(data, hist=False)
+        plt.show()
+        plt.title('Peers:{} - Pool Size:{}'.format(int(self.number_of_peers/2), self.max_peer_pool_size))          # Setting a Title for the plot based on inputs
         # # plot_histogram((data, bins, counts))
         return (data, bins, counts)
 
